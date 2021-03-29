@@ -1,0 +1,114 @@
+.receivepage {
+  padding-top: 50px;
+}
+.error {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #999999;
+    font-size: 20px;
+  }
+}
+.container {
+  width: 375px;
+  height: 655px;
+  background: url("../../../assets/images/receivecoupon/receive_bg.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  .couponbox {
+    width: 340px;
+    height: 150px;
+    background: url("../../../assets/images/receivecoupon/coupon_bg.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 214px;
+    .coupontype {
+      position: absolute;
+      top: 14px;
+      left: 1px;
+      span:nth-of-type(1) {
+        display: inline-block;
+        color: #fff;
+        font-size: 13px;
+        background: #FFCB27;
+        padding: 4px 8px 4px 7px;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
+      }
+      span:nth-of-type(2) {
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+    .pricebox {
+      position: absolute;
+      left: 14px;
+      bottom: 20px;
+      div:nth-of-type(1) {
+        font-size: 38px;
+        color: #F7F500;
+        span {
+          font-size: 16px;
+          color: #F7F500;
+          margin-left: 10px;
+        }
+      }
+      div:nth-of-type(2) {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+  }
+  .loginform {
+    width: 320px;
+    height: 169px;
+    position: absolute;
+    bottom: 25px;
+    img {
+      width: 20px;
+    }
+    /deep/.ivu-input{
+      height: 43px;
+      border-radius: 21px;
+    }
+    /deep/.ivu-input-prefix {
+      top: 25%;
+      left: 3px;
+    }
+    .code {
+      .sendCode {
+        font-size: 12px;
+        border: 0;
+        color: #FF5D19;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 14px;
+        margin-top: 15px;
+        margin-right: 10px;
+        background: #fff;
+        padding-left: 10px;
+      }
+      /deep/.ivu-input-suffix {
+        width: auto;
+      }
+    }
+    .login_button {
+      margin-top: 20px;
+      /deep/.ivu-btn {
+        width: 100%;
+        height: 43px;
+        border-radius: 22px;
+        border: none;
+        color: #fff;
+        background: linear-gradient(to right, #FFA14B, #FF5D19);
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.receivepage {
+  padding-top: 50px;
+}
+.container {
+  width: 375px;
+  height: 655px;
+  background: url("../../../assets/images/receivecoupon/receive_bg.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  >div {
+    position: absolute;
+  }
+  >div:nth-of-type(1) {
+    text-align: center;
+    bottom: 150px;
+    font-size: 15px;
+    color: #fff;
+    >div:nth-of-type(1) {
+      margin-top: 24px
+    }
+  }
+  >div:nth-of-type(2) {
+    width: 320px;
+    bottom: 58px;
+  }
+  .login_button {
+    margin-top: 20px;
+    /deep/.ivu-btn {
+      width: 100%;
+      height: 43px;
+      border-radius: 22px;
+      border: none;
+      color: #fff;
+      background: linear-gradient(to right, #FFA14B, #FF5D19);
+    }
+  }
+}
